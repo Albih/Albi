@@ -6,12 +6,20 @@
 
    
    <H1 id= "titolo" style ="position:absolute; left:600px; top:auto;">F.C Inter<H1>
-   <p id= "sottotitolo" style = "position:absolute; left:500px; top: 250px;">  
-      Ecco a voi appasionati dell'Inter, un page dedicata solo a voi </p>
+   <p id= "sottotitolo" style = "position:absolute; left:400px; top: 250px;">  
+      Ecco a voi tifosi dell'Inter, un page tutta interista </p>
    <body style="background-color:blue">
-   <img src="inter.jpg" style="position:absolute; left: 525px; top:100px">
-   <input type="button"  id= "button1" value= "Rosa attuale"  style = "position:absolute; left: 300; top:350px;"/>
+   <img id= stemma src="inter.jpg" style="position:absolute; left: 525px; top:100px">
+   <input type="button"  id= "button1" value= "Rosa attuale 18/19"  style = "position:absolute; left: 300; top:350px on click: "rosa attuale();"/>
 
+ function rosa attuale() {
+     document.getElementbyId(titolo).style.display= "none";
+     document.getElementbyId(sottotitolo).style.display= "none";
+     document.getElementbyId(stemma).style.display= "none";
+     document.getElementbyId(button1).style.display= "none";
+    
+     
+ }
  </body>
 </html>
   
