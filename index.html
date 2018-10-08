@@ -12,8 +12,8 @@
    <img id= stemma src="inter.jpg" style="position:absolute; left: 525px; top:100px">
    <input type="button"  id= "button1" value= "Rosa attuale 18/19"  style = "position:absolute; left: auto; top:420px" onclick="Rosa();"/>
    <div id= "formazione" style="display:none;">Ecco a voi la formazione ufficiale 2018-2019 della squadra di calcio F.c Inter</div>
-   <a href="https://it.wikipedia.org/wiki/Storia_del_Football_Club_Internazionale_Milano" style=" position:absolute; left:auto; top:350px" title= "Storia dell'Inter"> Vuoi essere a conoscenza della storia dell'inter, basta fare un click </a>
-   <div id= "giocatori" style="display:none;">Portieri: Samir Handanovic, Daniele Padelli, Tommaso Berni </div> 
+   <a id= "storia" href="https://it.wikipedia.org/wiki/Storia_del_Football_Club_Internazionale_Milano" style=" position:absolute; left:auto; top:350px" title= "Storia dell'Inter"> Vuoi essere a conoscenza della storia dell'inter, basta fare un click </a>
+   <div id= "giocatori" style="display:none; positon:absolute; left: auto; top: 150px;">Portieri: Samir Handanovic, Daniele Padelli, Tommaso Berni </div> 
 
  
 <script>
@@ -22,8 +22,10 @@
         document.getElementById("sottotitolo").style.display= "none";
         document.getElementById("stemma").style.display= "none";
         document.getElementById("button1").style.display= "none";
+        document.getElementById("storia").style.display= "none"
         document.getElementById("formazione").style.display= "block";    
-        document.getElementById("giocatori").style.display= "block";    
+        document.getElementById("giocatori").style.display= "block";   
+      
     }
  
 
