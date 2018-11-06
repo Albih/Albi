@@ -1,42 +1,52 @@
 <html>
 <head>
+  <title> Fanpage</title>
+ </head>
+  <style>
+    
+    body {
+      background-color:rgb(034,113,179);
+     }
+    #titolo{
+      background-color: rgb(255-035-001);
+       }
+    .scritte{
+       background-color: rgb(000-247-000);
+     }
+      
+  </style>
+ <body>
 
-<title>
-Interrogazione
-</title>
-
-</head> 
-
-<style>
-body{ 
-     background-color: rgb(0,0,255);
-
-}
-
-
-</style>
-
-<body>
-
-<h1 id= “titolo” style= “ position:absolute; left:600px; top:auto;”> Chi interroghiamo oggi?<h1>
-
-<P id= “nome”> </p>
-
-<input type="button"  value= Interroghiamo onclick=“Interrogare()”/>
-
-
-
+   
+   <H1 id= "titolo" style ="display:block; position:absolute; left:600px; top:auto;">F.C Inter<H1><br>
+   <p class= "scritte" id= "sottotitolo" style = "position:absolute; left:400px; top: 250px;">  
+      Ecco a voi tifosi dell'Inter, un page tutta interista </p>
+    <p class= "scritte" id= "Inter" style = "position:absolute; left:400px; top: 450px;">  
+      Forza Inter </p>
+   <img id= stemma src="inter.jpg" style="position:absolute; left: 525px; top:100px">
+   <input type="button"  id= "button1" value= "Rosa attuale 18/19"  style = "position:absolute; left: auto; top:420px" onclick="Rosa();"/>
+   <div id= "formazione" style="display:none; position:absolute; left: auto; top:100">Ecco a voi la formazione ufficiale 2018-2019 della squadra di calcio F.c Inter</div>
+   <a id= "storia" href="https://it.wikipedia.org/wiki/Storia_del_Football_Club_Internazionale_Milano" style=" position:absolute; left:auto; top:350px" title= "Storia dell'Inter"> Vuoi essere a conoscenza della storia dell'inter, basta fare un click </a>
+   <div id= "giocatori" style="display:none; position:absolute; left: auto; top: 120px;">Portieri: Samir Handanovic, Daniele Padelli, Tommaso Berni </div> 
+   <text id= "text" style= "position:absolute; left: 550px; top: 470px">"Inno dell'Inter"</text>
+    <iframe id= "inno" style="position:absolute; left: 550px; top:500px" width="200" height="200" src="https://www.youtube.com/embed/PDztCvdsv5g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+ 
 <script>
+                                                                                                                                                                                                                                                                                              
+    function  Rosa() {
+        document.getElementById("sottotitolo").style.display= "none";
+        document.getElementById("stemma").style.display= "none";
+        document.getElementById("button1").style.display= "none";
+        document.getElementById("storia").style.display= "none"
+        document.getElementById("formazione").style.display= "block";    
+        document.getElementById("giocatori").style.display= "block";   
+        document.getElementById("inno").style.display= "none";   
+      
+        }
+ 
 
-
-function Interrogare() {
-var studenti = [ “Sara”, “Daniel”, “Beniamino”, “Alberto”, “Davide”];
-var i = Math.floor(Math.random()*5);
-alert(studenti[x]);
-
-
-}
+                                                        
 </script>
-
+     
 </body>
 </html>
